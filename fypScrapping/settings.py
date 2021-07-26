@@ -11,13 +11,14 @@ BOT_NAME = 'fypScrapping'
 
 SPIDER_MODULES = ['fypScrapping.spiders']
 NEWSPIDER_MODULE = 'fypScrapping.spiders'
+HTTPERROR_ALLOWED_CODES  =[404]
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'fypScrapping (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -53,6 +54,14 @@ ROBOTSTXT_OBEY = True
 #DOWNLOADER_MIDDLEWARES = {
 #    'fypScrapping.middlewares.FypscrappingDownloaderMiddleware': 543,
 #}
+
+# DOWNLOADER_MIDDLEWARES = {
+#     'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware': None,
+#     'scrapy_user_agents.middlewares.RandomUserAgentMiddleware': 400,
+#     # # 'scrapy_splash.SplashCookiesMiddleware': 723,
+#     # # 'scrapy_splash.SplashMiddleware': 725,
+#     # 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware': 810,
+# }
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html
