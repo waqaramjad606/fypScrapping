@@ -9,4 +9,14 @@ import scrapy
 class FypscrappingItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    pass
+    program_name = scrapy.Field()
+    program_type = scrapy.Field()
+    fees = scrapy.Field()
+    # degree_title = scrapy.Field()
+    # degree_type = scrapy.Field()
+    # course_duration = scrapy.Field()
+    start_term = scrapy.Field()
+    # start_date = scrapy.Field()
+    # deadline = scrapy.Field()
+    # campus = scrapy.Field()
+    language = scrapy.Field()
